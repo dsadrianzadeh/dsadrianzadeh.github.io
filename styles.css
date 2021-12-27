@@ -1,0 +1,283 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1e6f5c;
+}
+
+h2,
+h3,
+.my-btn {
+    font-family: "Averia Serif Libre", cursive;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+p {
+    font-family: "Cormorant", serif;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 0;
+    margin: 2.5px 0;
+}
+
+/* =============== Section 1 =============== */
+
+#first-section {
+    text-align: center;
+    height: 40%;
+    width: 100%;
+    margin: 0;
+}
+
+.profile-image {
+    width: 8rem;
+    padding: 0 auto 0 auto;
+    margin: 5px auto 1px auto;
+}
+
+.my-name {
+    padding: 0 auto 0 auto;
+    margin: 1px auto 1px auto;
+}
+
+.links {
+    padding: 0 auto 0 auto;
+    margin: 1px auto 1px auto;
+}
+
+.link {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.links img {
+    width: 2rem;
+}
+
+.buttons {
+    padding: 0 auto 0 auto;
+    margin: 1px auto 1px auto;
+}
+
+.my-btn {
+    position: relative;
+    /* border-color: #000000; */
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 170px;
+    height: 50px;
+    line-height: 48px;
+    background: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004); */
+}
+
+.my-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        #fb0094,
+        #00f,
+        #0f0,
+        #ff0,
+        #f00,
+        #fb0094,
+        #00f,
+        #0f0,
+        #ff0,
+        #f00
+    );
+    background-size: 400%;
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 20s linear infinite;
+}
+
+.my-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        #fb0094,
+        #00f,
+        #0f0,
+        #ff0,
+        #f00,
+        #fb0094,
+        #00f,
+        #0f0,
+        #ff0,
+        #f00
+    );
+    background-size: 400%;
+    opacity: 0;
+    filter: blur(20px);
+    transition: 0.5s;
+    animation: animate 20s linear infinite;
+}
+
+.my-btn:hover::before,
+.my-btn:hover::after {
+    opacity: 1;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.my-btn span {
+    position: absolute;
+    display: block;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    text-align: center;
+    background: #0c0c0c;
+    color: rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.my-btn:hover span {
+    color: rgba(255, 255, 255, 1);
+}
+
+.my-btn span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* =============== Section 2 =============== */
+
+#second-section {
+    text-align: center;
+    height: 60%;
+    width: 100%;
+    margin: 0;
+}
+
+/* ===== About Me ===== */
+
+.about-me {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: -1px;
+    padding-top: 10px;
+}
+
+.about-me h2 {
+    padding: 0;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+.about-me-text {
+    padding: 0;
+    margin: 0 450px 0 450px;
+    text-align: justify;
+}
+
+/* ===== Education ===== */
+
+.education {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: -1px;
+    padding-top: 10px;
+}
+
+.education h2 {
+    padding: 0;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+.logo {
+    width: 4rem;
+    padding: 0;
+}
+
+.education-flex-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+.education-flex-container div {
+    margin: 0 20px 14px 20px;
+}
+
+/* ===== Skills ===== */
+
+.skills {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: -1px;
+    padding-top: 10px;
+}
+
+.skills h2 {
+    padding: 0;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+.skills-flex-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+.skills-flex-container div {
+    margin: 0 20px 0 20px;
+}
+
+.skills-flex-container span {
+    float: left;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.checked {
+    color: gold;
+}

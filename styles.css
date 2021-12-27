@@ -1,29 +1,33 @@
 html,
 body {
     margin: 0;
+    padding: 0;
+    border: none;
     height: 100%;
+    width: 100%;
     overflow: hidden;
+    background-color: #1e6f5c;
 }
 
 h2,
 h3,
 .my-btn {
-    font-family: "Sarabun", sans-serif;
-    font-weight: 800;
-    /* color: #000957; */
-    color: #3db2ff;
+    font-family: "Averia Serif Libre", cursive;
+    font-size: 28px;
+    color: #ffffff;
 }
 
 p {
-    font-family: "Baloo 2", cursive;
-    font-size: 20px;
-    color: white;
+    font-family: "Cormorant", serif;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 0;
+    margin: 2.5px 0;
 }
 
 /* =============== Section 1 =============== */
 
 #first-section {
-    background-color: #7267cb;
     text-align: center;
     height: 40%;
     width: 100%;
@@ -177,25 +181,26 @@ p {
 /* =============== Section 2 =============== */
 
 #second-section {
-    background-color: #7267cb;
     text-align: center;
     height: 60%;
+    width: 100%;
     margin: 0;
 }
 
 /* ===== About Me ===== */
 
 .about-me {
-    background-color: #7267cb;
     text-align: center;
     height: 100%;
+    width: 100%;
     margin-top: -1px;
     padding-top: 10px;
 }
 
 .about-me h2 {
-    padding: auto;
-    margin-bottom: 15px;
+    padding: 0;
+    margin-bottom: 14px;
+    margin-top: 0;
 }
 
 .about-me-text {
@@ -207,65 +212,72 @@ p {
 /* ===== Education ===== */
 
 .education {
-    background-color: #7267cb;
     text-align: center;
     height: 100%;
+    width: 100%;
     margin-top: -1px;
     padding-top: 10px;
 }
 
 .education h2 {
-    padding: auto;
-    margin-bottom: 15px;
+    padding: 0;
+    margin-bottom: 14px;
+    margin-top: 0;
 }
 
-.edu-p1 {
+.logo {
+    width: 4rem;
     padding: 0;
-    margin: 0 20px 5px 20px;
-}
-.ut {
-    padding: 0;
-    margin: 0 240px 0 0;
 }
 
-.edu-p2 {
-    padding: 0;
-    margin: 0 20px 40px 20px;
-}
-.msc {
-    padding: 0;
-    margin: 0 170px 0 0;
-}
-
-.edu-p3 {
-    padding: 0;
-    margin: 0 20px 5px 20px;
-}
-.put {
-    padding: 0;
-    margin: 0 80px 0 0;
+.education-flex-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
 }
 
-.edu-p4 {
-    padding: 0;
-    margin: 0 20px 0px 20px;
-}
-.bsc {
-    padding: 0;
-    margin: 0 180px 0 0;
+.education-flex-container div {
+    margin: 0 20px 14px 20px;
 }
 
 /* ===== Skills ===== */
 
 .skills {
-    background-color: #7267cb;
     text-align: center;
     height: 100%;
+    width: 100%;
     margin-top: -1px;
     padding-top: 10px;
 }
 
 .skills h2 {
-    padding: auto;
-    margin-bottom: 15px;
+    padding: 0;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+.skills-flex-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+.skills-flex-container div {
+    margin: 0 20px 0 20px;
+}
+
+.skills-flex-container span {
+    float: left;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.checked {
+    color: gold;
 }
